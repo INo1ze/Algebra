@@ -15,7 +15,7 @@ public class MMat{
         
         MMat matrizOne = new MMat(col, fil);
         
-        matrizOne.llenarM();
+        matrizOne.autors();
         
         MMat matrizTwo = new MMat(col,fil);
         
