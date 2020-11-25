@@ -1,11 +1,11 @@
 # Algebra
-Trabajillo
+Trabajo colabolativo
 import java.util.Scanner;
 /**
  *
- * @author Diego Lienzo, Angel Campos, Dario Enriquez
+ * @author Diego Lienzo, Angel Morales, Dario Enriquez.
  */
-public class MMat{
+public class Matriz {
     public static void main(String [] args){
         Scanner enter = new Scanner(System.in);
         System.out.println("Numero de filas: ");
@@ -15,12 +15,13 @@ public class MMat{
         
         MMat matrizOne = new MMat(col, fil);
         
-        matrizOne.autors();
-        
-        MMat matrizTwo = new MMat(col,fil);
-        
-        matrizTwo.llenarM();
-        }
+        matrizOne.llenarM();
+        matrizOne.impM();
+    }
+}
+
+
+public class MMat{
     int col, val, fil, matriz[][];
     int vec [];
     Scanner enter = new Scanner(System.in);
@@ -43,10 +44,6 @@ public class MMat{
         }
     }
         
-   public void autors()
-   {
-       System.out.println("Campos Morales Angel, Lienzo G. Diego, Enriquez Dario");
-   }
     public void impM(){
         for(int i = 0; i < fil; i +=1){
             for(int j = 0; j < col; j +=1){
@@ -54,7 +51,7 @@ public class MMat{
             }
             System.out.println("");
         }
+        System.out.println("Campos Morales Angel, Lienzo G. Diego, Enriquez B. Dario");
 }
 
 }
-
